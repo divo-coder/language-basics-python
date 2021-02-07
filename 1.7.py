@@ -1,4 +1,3 @@
-
 proceeds = int(input('Введите значение выручки : '))
 costs = int(input('Введите значение издержек: '))
 if proceeds > costs:
