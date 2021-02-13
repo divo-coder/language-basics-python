@@ -1,10 +1,12 @@
 proceeds = int(input('Введите значение выручки : '))
 costs = int(input('Введите значение издержек: '))
 if proceeds > costs:
-    print('Фирма работает в плюс')
+    print('Фирма работает с прибылью')
+elif proceeds < costs:
+    print('фирма работает с убытками')
 else:
-    print('Выручки нет')
+    print("компания работает в 0")
 ren = (proceeds - costs) / proceeds
-print('Рентабельность составляет: ', ren)
+print(f'Рентабельность составляет: {ren:.1f}')
 n = int(input('Введите количество сотрудников: '))
-print('Прибыль фирмы в расчете на одного сотрудника: ', (proceeds - costs) / n)
+print(f'Прибыль фирмы в расчете на одного сотрудника: {(proceeds - costs) / n:.0f}')
